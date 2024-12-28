@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <div class="container">
+    <h1>Generator</h1>
+    <div class="password-settings">
+      <label for="password-length">Password length</label>
+      <input type="number" id="password-length" value="12" min="6" max="32">
+      <div class="checkboxes">
+        <label for="iclude-lowercase">Строчные буквы</label>
+        <input type="checkbox" id="include-lowercase" checked>
+
+        <label for="iclude-uppercase">Заглавные буквы</label>
+        <input type="checkbox" id="include-uppercase" checked>
+
+        <label for="iclude-numbers">Цыфры</label>
+        <input type="checkbox" id="include-numbers" checked>
+
+        <label for="iclude-special">Спецсимыволы</label>
+        <input type="checkbox" id="include-speacial" checked>
+      </div>
+      <button id="generate-btn">Сгенерировать пароль</button>
+    </div>
+    <div class="generated-password">
+      <input type="text" id="generated-password" readonly placeholder="Ваш пароль будет здесь">
+      <button id="copy-btn">Копировать</button>
+    </div>
+  </div>
+  <script src="javascript.js"></script>
+</body>
+</html>
